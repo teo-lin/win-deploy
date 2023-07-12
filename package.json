@@ -1,0 +1,27 @@
+{
+  "name": "automated-windows-setup",
+  "version": "1.0.0",
+  "description": "\"Automated Windows deployment (setup, personalisation, debloating, drivers, apps, optimisations)\"",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon --watch renderer --exec electron .",
+    "build": "electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/teo-lin/automated-windows-setup"
+  },
+  "keywords": [
+    "debloat",
+    "optimise",
+    "customise",
+    "setup",
+    "deploy"
+  ],
+  "author": "Teolin Codreanu",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "electron": "^25.2.0",
+    "nodemon": "^3.0.1"
+  }
+}
