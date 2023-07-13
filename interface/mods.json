@@ -1,122 +1,122 @@
 [
     {
-      "id": "checkbox1",
-      "description": "Checkbox 1 - very long explanation of what this does bla bla bla"
+      "id": "mod1",
+      "description": "Mod 1 - very long explanation of what this does bla bla bla"
     },
     {
-      "id": "checkbox2",
-      "description": "Checkbox 2 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
+      "id": "mod2",
+      "description": "Mod 2 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
     },
     {
-      "id": "checkbox3",
-      "description": "Checkbox 3 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
+      "id": "mod3",
+      "description": "Mod 3 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
     },
     {
-      "id": "checkbox4",
-      "description": "Checkbox 4 - very long explanation of what this does bla bla bla"
+      "id": "mod4",
+      "description": "Mod 4 - very long explanation of what this does bla bla bla"
     },
     {
-      "id": "checkbox5",
-      "description": "Checkbox 5 - very long explanation of what this does bla bla bla"
+      "id": "mod5",
+      "description": "Mod 5 - very long explanation of what this does bla bla bla"
     },
     {
-      "id": "checkbox1",
-      "description": "Checkbox 6 - very long explanation of what this does bla bla bla"
+      "id": "mod1",
+      "description": "Mod 6 - very long explanation of what this does bla bla bla"
     },
     {
-      "id": "checkbox2",
-      "description": "Checkbox 7 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
+      "id": "mod2",
+      "description": "Mod 7 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
     },
     {
-      "id": "checkbox3",
-      "description": "Checkbox 8 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
+      "id": "mod3",
+      "description": "Mod 8 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
     },
     {
-      "id": "checkbox4",
-      "description": "Checkbox 9 - very long explanation of what this does bla bla bla"
+      "id": "mod4",
+      "description": "Mod 9 - very long explanation of what this does bla bla bla"
     },
     {
-      "id": "checkbox5",
-      "description": "Checkbox 10 - very long explanation of what this does bla bla bla"
+      "id": "mod5",
+      "description": "Mod 10 - very long explanation of what this does bla bla bla"
     },
     {
-      "id": "checkbox1",
-      "description": "Checkbox 11 - very long explanation of what this does bla bla bla"
+      "id": "mod1",
+      "description": "Mod 11 - very long explanation of what this does bla bla bla"
     },
     {
-      "id": "checkbox2",
-      "description": "Checkbox 12 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
+      "id": "mod2",
+      "description": "Mod 12 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
     },
     {
-      "id": "checkbox3",
-      "description": "Checkbox 13 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
+      "id": "mod3",
+      "description": "Mod 13 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
     },
     {
-      "id": "checkbox4",
-      "description": "Checkbox 14 - very long explanation of what this does bla bla bla"
+      "id": "mod4",
+      "description": "Mod 14 - very long explanation of what this does bla bla bla"
     },
     {
-      "id": "checkbox5",
-      "description": "Checkbox 15 - very long explanation of what this does bla bla bla"
+      "id": "mod5",
+      "description": "Mod 15 - very long explanation of what this does bla bla bla"
     },
     {
-      "id": "checkbox1",
-      "description": "Checkbox 16 - very long explanation of what this does bla bla bla"
+      "id": "mod1",
+      "description": "Mod 16 - very long explanation of what this does bla bla bla"
     },
     {
-      "id": "checkbox2",
-      "description": "Checkbox 17 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
+      "id": "mod2",
+      "description": "Mod 17 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
     },
     {
-      "id": "checkbox3",
-      "description": "Checkbox 18 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
+      "id": "mod3",
+      "description": "Mod 18 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
     },
     {
-      "id": "checkbox4",
-      "description": "Checkbox 19 - very long explanation of what this does bla bla bla"
+      "id": "mod4",
+      "description": "Mod 19 - very long explanation of what this does bla bla bla"
     },
     {
-      "id": "checkbox5",
-      "description": "Checkbox 20 - very long explanation of what this does bla bla bla"
+      "id": "mod5",
+      "description": "Mod 20 - very long explanation of what this does bla bla bla"
     },
     {
-      "id": "checkbox1",
-      "description": "Checkbox 21 - very long explanation of what this does bla bla bla"
+      "id": "mod1",
+      "description": "Mod 21 - very long explanation of what this does bla bla bla"
     },
     {
-      "id": "checkbox2",
-      "description": "Checkbox 22 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
+      "id": "mod2",
+      "description": "Mod 22 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
     },
     {
-      "id": "checkbox3",
-      "description": "Checkbox 23 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
+      "id": "mod3",
+      "description": "Mod 23 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
     },
     {
-      "id": "checkbox4",
-      "description": "Checkbox 24 - very long explanation of what this does bla bla bla"
+      "id": "mod4",
+      "description": "Mod 24 - very long explanation of what this does bla bla bla"
     },
     {
-      "id": "checkbox5",
-      "description": "Checkbox 25 - very long explanation of what this does bla bla bla"
+      "id": "mod5",
+      "description": "Mod 25 - very long explanation of what this does bla bla bla"
     },
     {
-      "id": "checkbox1",
-      "description": "Checkbox 26 - very long explanation of what this does bla bla bla"
+      "id": "mod1",
+      "description": "Mod 26 - very long explanation of what this does bla bla bla"
     },
     {
-      "id": "checkbox2",
-      "description": "Checkbox 27 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
+      "id": "mod2",
+      "description": "Mod 27 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
     },
     {
-      "id": "checkbox3",
-      "description": "Checkbox 28 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
+      "id": "mod3",
+      "description": "Mod 28 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
     },
     {
-      "id": "checkbox4",
-      "description": "Checkbox 29 - very long explanation of what this does bla bla bla"
+      "id": "mod4",
+      "description": "Mod 29 - very long explanation of what this does bla bla bla"
     },
     {
-      "id": "checkbox5",
-      "description": "Checkbox 30 - very long explanation of what this does bla bla bla"
+      "id": "mod5",
+      "description": "Mod 30 - very long explanation of what this does bla bla bla"
     }
   ]
