@@ -1,122 +1,149 @@
 [
-    {
-      "id": "mod1",
-      "description": "Mod 1 - very long explanation of what this does bla bla bla"
-    },
-    {
-      "id": "mod2",
-      "description": "Mod 2 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
-    },
-    {
-      "id": "mod3",
-      "description": "Mod 3 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
-    },
-    {
-      "id": "mod4",
-      "description": "Mod 4 - very long explanation of what this does bla bla bla"
-    },
-    {
-      "id": "mod5",
-      "description": "Mod 5 - very long explanation of what this does bla bla bla"
-    },
-    {
-      "id": "mod1",
-      "description": "Mod 6 - very long explanation of what this does bla bla bla"
-    },
-    {
-      "id": "mod2",
-      "description": "Mod 7 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
-    },
-    {
-      "id": "mod3",
-      "description": "Mod 8 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
-    },
-    {
-      "id": "mod4",
-      "description": "Mod 9 - very long explanation of what this does bla bla bla"
-    },
-    {
-      "id": "mod5",
-      "description": "Mod 10 - very long explanation of what this does bla bla bla"
-    },
-    {
-      "id": "mod1",
-      "description": "Mod 11 - very long explanation of what this does bla bla bla"
-    },
-    {
-      "id": "mod2",
-      "description": "Mod 12 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
-    },
-    {
-      "id": "mod3",
-      "description": "Mod 13 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
-    },
-    {
-      "id": "mod4",
-      "description": "Mod 14 - very long explanation of what this does bla bla bla"
-    },
-    {
-      "id": "mod5",
-      "description": "Mod 15 - very long explanation of what this does bla bla bla"
-    },
-    {
-      "id": "mod1",
-      "description": "Mod 16 - very long explanation of what this does bla bla bla"
-    },
-    {
-      "id": "mod2",
-      "description": "Mod 17 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
-    },
-    {
-      "id": "mod3",
-      "description": "Mod 18 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
-    },
-    {
-      "id": "mod4",
-      "description": "Mod 19 - very long explanation of what this does bla bla bla"
-    },
-    {
-      "id": "mod5",
-      "description": "Mod 20 - very long explanation of what this does bla bla bla"
-    },
-    {
-      "id": "mod1",
-      "description": "Mod 21 - very long explanation of what this does bla bla bla"
-    },
-    {
-      "id": "mod2",
-      "description": "Mod 22 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
-    },
-    {
-      "id": "mod3",
-      "description": "Mod 23 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
-    },
-    {
-      "id": "mod4",
-      "description": "Mod 24 - very long explanation of what this does bla bla bla"
-    },
-    {
-      "id": "mod5",
-      "description": "Mod 25 - very long explanation of what this does bla bla bla"
-    },
-    {
-      "id": "mod1",
-      "description": "Mod 26 - very long explanation of what this does bla bla bla"
-    },
-    {
-      "id": "mod2",
-      "description": "Mod 27 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
-    },
-    {
-      "id": "mod3",
-      "description": "Mod 28 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"
-    },
-    {
-      "id": "mod4",
-      "description": "Mod 29 - very long explanation of what this does bla bla bla"
-    },
-    {
-      "id": "mod5",
-      "description": "Mod 30 - very long explanation of what this does bla bla bla"
-    }
-  ]
+  {
+    "file": "createNewTextFile",
+    "type": "Test",
+    "name": "Create a new text file",
+    "info": "Creates a new text file called TestX.txt in a test folder in the modules folder. You can list existing text files or undo the last one.",
+    "sets": ""
+  },
+  {
+    "file": "mod001",
+    "type": "",
+    "name": "",
+    "info": "Mod 1 - very long explanation of what this does bla bla bla",
+    "sets": ""
+  },
+  {
+    "file": "mod002",
+    "type": "",
+    "name": "",
+    "info": "Mod 2 - very long explanation of what this does...",
+    "sets": ""
+  },
+  {
+    "file": "mod003",
+    "type": "",
+    "name": "",
+    "info": "Mod 3 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
+    "sets": ""
+  },
+  {
+    "file": "mod004",
+    "type": "",
+    "name": "",
+    "info": "Mod 4 - very long explanation of what this does bla bla bla",
+    "sets": ""
+  },
+  {
+    "file": "mod005",
+    "type": "",
+    "name": "",
+    "info": "Mod 5 - very long explanation of what this does bla bla bla",
+    "sets": ""
+  },
+  {
+    "file": "mod006",
+    "type": "",
+    "name": "",
+    "info": "Mod 6 - very long explanation of what this does bla bla bla",
+    "sets": ""
+  },
+  {
+    "file": "mod007",
+    "type": "",
+    "name": "",
+    "info": "Mod 7 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
+    "sets": ""
+  },
+  {
+    "file": "mod008",
+    "type": "",
+    "name": "",
+    "info": "Mod 8 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
+    "sets": ""
+  },
+  {
+    "file": "mod009",
+    "type": "",
+    "name": "",
+    "info": "Mod 9 - very long explanation of what this does bla bla bla",
+    "sets": ""
+  },
+  {
+    "file": "mod010",
+    "type": "",
+    "name": "",
+    "info": "Mod 10 - very long explanation of what this does bla bla bla",
+    "sets": ""
+  },
+  {
+    "file": "mod011",
+    "type": "",
+    "name": "",
+    "info": "Mod 11 - very long explanation of what this does bla bla bla",
+    "sets": ""
+  },
+  {
+    "file": "mod012",
+    "type": "",
+    "name": "",
+    "info": "Mod 12 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
+    "sets": ""
+  },
+  {
+    "file": "mod013",
+    "type": "",
+    "name": "",
+    "info": "Mod 13 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
+    "sets": ""
+  },
+  {
+    "file": "mod014",
+    "type": "",
+    "name": "",
+    "info": "Mod 14 - very long explanation of what this does bla bla bla",
+    "sets": ""
+  },
+  {
+    "file": "mod015",
+    "type": "",
+    "name": "",
+    "info": "Mod 15 - very long explanation of what this does bla bla bla",
+    "sets": ""
+  },
+  {
+    "file": "mod016",
+    "type": "",
+    "name": "",
+    "info": "Mod 16 - very long explanation of what this does bla bla bla",
+    "sets": ""
+  },
+  {
+    "file": "mod017",
+    "type": "",
+    "name": "",
+    "info": "Mod 17 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
+    "sets": ""
+  },
+  {
+    "file": "mod018",
+    "type": "",
+    "name": "",
+    "info": "Mod 18 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
+    "sets": ""
+  },
+  {
+    "file": "mod019",
+    "type": "",
+    "name": "",
+    "info": "Mod 19 - very long explanation of what this does bla bla bla",
+    "sets": ""
+  },
+  {
+    "file": "mod020",
+    "type": "",
+    "name": "",
+    "info": "Mod 20 - very long explanation of what this does bla bla bla",
+    "sets": ""
+  }
+]

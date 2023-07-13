@@ -5,21 +5,18 @@ function log(message) {
   p.textContent = message
   consoleElement.appendChild(p)
 }
-
 function getJsonData(response) {
   return response.json()
 }
-
 function createCheckboxElement(checkbox) {
   const checkboxElement = document.createElement('div')
   checkboxElement.classList.add('mod')
   checkboxElement.innerHTML = `
-    <input type="checkbox" id="${checkbox.id}">
-    <label for="${checkbox.id}">${checkbox.description}</label>
+    <input type="checkbox" id="${checkbox.file}">
+    <label for="${checkbox.id}">${checkbox.info}</label>
   `
   return checkboxElement
 }
-
 function handleModMouseEnter(mod) {
   console.log('hovering...')
   const audio = new Audio('hover.mp3')
@@ -29,15 +26,12 @@ function handleModMouseEnter(mod) {
   output.textContent = mod.textContent
   mod.hoverTimeout = setTimeout(() => { mod.dispatchEvent(mod.longHoverEvent) }, 1000)
 }
-
 function handleModMouseLeave(mod) {
   clearTimeout(mod.hoverTimeout)
 }
-
 function handleLongHover(mod) {
   console.log('Hello')
 }
-
 function attachEvents() {
   const mods = document.querySelectorAll('.mod')
   mods.forEach(mod => {
@@ -48,7 +42,6 @@ function attachEvents() {
     mod.addEventListener('longhover', () => handleLongHover(mod))
   })
 }
-
 function generateModsList(data) {
   const checkboxesDiv = document.getElementById('checkboxes')
   data.forEach(checkbox => {

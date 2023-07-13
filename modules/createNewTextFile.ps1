@@ -1,4 +1,4 @@
-function Check-Test {
+function Status {
     $dir = Split-Path -Parent $MyInvocation.MyCommand.Path
     $folderPath = "$dir\test"
     $fileExtension = ".txt"
@@ -20,7 +20,7 @@ function Check-Test {
     }
 }
 
-function Enable-Test {
+function Run {
     $dir = Split-Path -Parent $MyInvocation.MyCommand.Path
     $folderPath = "$dir\test"
     $fileBaseName = "test"
@@ -38,7 +38,7 @@ function Enable-Test {
     New-Item -ItemType File -Path "$folderPath\$fileBaseName$fileNumber$fileExtension"
 }
 
-function Disable-Test {
+function Undo {
     $dir = Split-Path -Parent $MyInvocation.MyCommand.Path
     $folderPath = "$dir\test"
     $fileBaseName = "test"
