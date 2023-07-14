@@ -1,27 +1,19 @@
 function openTab(evt, tabName) {
-  var i, tabcontent, tablinks;
+  var i, tabcontent, tablinks
 
-  tabcontent = document.getElementsByClassName("tabcontent");
+  tabcontent = document.getElementsByClassName("tabcontent")
   for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+    tabcontent[i].style.display = "none"
   }
 
-  tablinks = document.getElementsByClassName("tablinks");
+  tablinks = document.getElementsByClassName("tablinks")
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    tablinks[i].className = tablinks[i].className.replace(" active", "")
   }
 
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
+  document.getElementById(tabName).style.display = "block"
+  evt.currentTarget.className += " active"
 }
-
-
-
-
-
-
-
-// ------- FUNCTION DEFINITIONS ---------
 function log(message) {
   const consoleElement = document.getElementById('console')
   const p = document.createElement('p')
@@ -31,31 +23,39 @@ function log(message) {
 function getJsonData(response) {
   return response.json()
 }
-function createCheckboxElement(checkbox) {
-  const checkboxElement = document.createElement('div')
-  checkboxElement.classList.add('mod')
-  checkboxElement.innerHTML = `
+function generateModsList(data) {
+  function createCheckboxElement(checkbox) {
+    const checkboxElement = document.createElement('div')
+    checkboxElement.classList.add('mod')
+    checkboxElement.innerHTML = `
     <input type="checkbox" id="${checkbox.file}">
     <label for="${checkbox.id}">${checkbox.info}</label>
   `
-  return checkboxElement
-}
-function handleModMouseEnter(mod) {
-  console.log('hovering...')
-  const audio = new Audio('hover.mp3')
-  audio.currentTime = 0
-  audio.play()
-  const output = document.querySelector('#output')
-  output.textContent = mod.textContent
-  mod.hoverTimeout = setTimeout(() => { mod.dispatchEvent(mod.longHoverEvent) }, 1000)
-}
-function handleModMouseLeave(mod) {
-  clearTimeout(mod.hoverTimeout)
-}
-function handleLongHover(mod) {
-  console.log('Hello')
+    return checkboxElement
+  }
+  const checkboxesDiv = document.getElementById('checkboxes')
+  data.forEach(checkbox => {
+    const checkboxElement = createCheckboxElement(checkbox)
+    checkboxesDiv.appendChild(checkboxElement)
+  })
+  return checkboxesDiv.querySelectorAll('.mod')
 }
 function attachEvents() {
+  function handleModMouseEnter(mod) {
+    console.log('hovering...')
+    const audio = new Audio('hover.mp3')
+    audio.currentTime = 0
+    audio.play()
+    const output = document.querySelector('#output')
+    output.textContent = mod.textContent
+    mod.hoverTimeout = setTimeout(() => { mod.dispatchEvent(mod.longHoverEvent) }, 1000)
+  }
+  function handleModMouseLeave(mod) {
+    clearTimeout(mod.hoverTimeout)
+  }
+  function handleLongHover(mod) {
+    console.log('Hello')
+  }
   const mods = document.querySelectorAll('.mod')
   mods.forEach(mod => {
     mod.hoverTimeout = null
@@ -64,14 +64,6 @@ function attachEvents() {
     mod.addEventListener('mouseleave', () => handleModMouseLeave(mod))
     mod.addEventListener('longhover', () => handleLongHover(mod))
   })
-}
-function generateModsList(data) {
-  const checkboxesDiv = document.getElementById('checkboxes')
-  data.forEach(checkbox => {
-    const checkboxElement = createCheckboxElement(checkbox)
-    checkboxesDiv.appendChild(checkboxElement)
-  })
-  return checkboxesDiv.querySelectorAll('.mod')
 }
 
 // ----------- EXECUTE ------------
