@@ -1,7 +1,10 @@
 html, body {
   height: 100%;
   margin: 0;
+  font-family: Arial, sans-serif;
+  color: wheat;
   color-scheme: dark;
+  font-size: 16px;
 }
 
 .container {
@@ -15,16 +18,15 @@ html, body {
   box-sizing: border-box;
 }
 
+/* ---------------- PANELS ---------------- */
 .panel1,
 .panel2,
 .panel3 {
-  border: 4px inset black;
+  border: 4px inset #000;
   border-radius: 6px;
   padding: 10px;
   background-color: #222;
-  font-family: Arial, sans-serif;
-  color: wheat;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 .panel1 {
@@ -46,34 +48,38 @@ html, body {
 
 .panel1 h2,
 .panel2 h2,
-.panel3 h2,
-.panel2 h3 {
+.panel3 h2 {
   margin-top: 0;
-  color: khaki;
+  color: beige;
 }
 
 #console p {
   margin: 0;
   padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  color: lightgreen;
 }
 
-#Tab1 {
-  display: block;
+#tab-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
+/* ---------------- BUTTONS ---------------- */
 .tab button {
-  border: 3px outset black;
+  flex-grow: 1;
+  border: 3px outset #000;
   outline: none;
   cursor: pointer;
   padding: 6px 16px;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: inherit;
-  margin-right: 4px;
-  background-color: #222;
+  font-size: 30px;
+  color: beige;
+  margin: 5px;
+  background-color: #1e2422;
   transition: background-color 0.2s ease;
-  color: wheat;
   border-radius: 7px;
+  height: 60px;
 }
 
 .tab button:hover,
@@ -85,31 +91,24 @@ html, body {
   color: coral;
 }
 
+/* ---------------- MODS ---------------- */
 .tabcontent,
 .mod {
-  font-family: Arial, sans-serif;
-  font-size: 20px;
-  line-height: 1.5;
   color: dimgray;
   border-radius: 8px;
   padding: 6px;
-  margin-top: 3px;
+  margin: 5px 15px 5px 0px;
+  align-content: center;
   transition: background-color 0.2s;
-}
-
-.tabcontent h3 {
-  font-size: 24px;
-  font-weight: bold;
-  font-family: inherit;
-  color: dimgray;
 }
 
 .mod {
   display: flex;
   align-items: center;
-  width: 99%;
-  border: 3px outset black;
+  width: 100%;
+  border: 2px outset #000;
 }
+
 .mod input[type="checkbox"] {
   margin-right: 10px;
   width: 20px;
