@@ -1,30 +1,5 @@
-// Hijack the console output and redirect it to the UI
-function log(message) {
-  const consoleElement = document.getElementById('console')
-  const p = document.createElement('p')
-  p.textContent = message
-  consoleElement.appendChild(p)
-}
-console.log = log
-
 // Generate panel1 automatically from json
-function openTab(evt, tabName) {
-  var i, tabcontent, tablinks
-
-  tabcontent = document.getElementsByClassName("tabcontent")
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none"
-  }
-
-  tablinks = document.getElementsByClassName("tablinks")
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "")
-  }
-
-  document.getElementById(tabName).style.display = "block"
-  evt.currentTarget.className += " active"
-}
-function generateModsList(data) {
+function generateModsList(jsonData) {
   function createCheckboxElement(checkbox) {
     const checkboxElement = document.createElement("div")
     checkboxElement.classList.add("mod")
@@ -36,17 +11,18 @@ function generateModsList(data) {
   }
 
   const checkboxesDiv = document.createElement("div")
-  data.forEach((checkbox) => {
+  jsonData.forEach((checkbox) => {
     const checkboxElement = createCheckboxElement(checkbox)
     checkboxesDiv.appendChild(checkboxElement)
   })
   return checkboxesDiv.querySelectorAll(".mod")
 }
-function generateHtml(data) {
+function generateHtml(jsonData) {
   const tabContainer = document.getElementById("tab-container")
   const tabContentContainer = document.getElementById("tab-content-container")
 
-  Object.keys(data).forEach((tabName, index) => {
+  const modsByTab = {}
+  Object.keys(jsonData).forEach((tabName, index) => {
     const tabButton = document.createElement("button")
     tabButton.classList.add("tablinks")
     tabButton.textContent = tabName
@@ -56,14 +32,21 @@ function generateHtml(data) {
     tabContent.classList.add("tabcontent")
     tabContent.id = `tab-${index}`
 
-    const mods = generateModsList(data[tabName])
+    const mods = generateModsList(jsonData[tabName])
     mods.forEach((mod) => tabContent.appendChild(mod))
 
     tabContainer.appendChild(tabButton)
     tabContentContainer.appendChild(tabContent)
+
+    modsByTab[tabName] = mods
   })
+
+  return {
+    jsonData: jsonData,
+    modsByTab: modsByTab,
+  }
 }
-function attachEvents() {
+function attachEvents(data) {
   function handleModMouseEnter(mod) {
     console.log("hovering...")
     const audio = new Audio("hover.mp3")
@@ -79,7 +62,11 @@ function attachEvents() {
     clearTimeout(mod.hoverTimeout)
   }
   function handleLongHover(mod) {
-    console.log("Hello")
+    const checkbox = mod.querySelector('input[type="checkbox"]')
+    const fileName = checkbox.id
+    console.log(`FILE NAME: ${fileName}.ps1`)
+    const filePath = getFilePath(fileName, data.jsonData, data.modsByTab)
+    console.log('FILE PATH: ', filePath)
   }
   const mods = document.querySelectorAll(".mod")
   mods.forEach((mod) => {
@@ -90,9 +77,24 @@ function attachEvents() {
     mod.addEventListener("longhover", () => handleLongHover(mod))
   })
 }
+function getFilePath(fileName, jsonData, modsByTab) {
+  console.log('DATA:', fileName, jsonData, typeof jsonData) // PROBLEM !!!!!!!!!!
+  console.log('JSON:', JSON.stringify(jsonData))
+  for (const tabName in modsByTab) {
+    const mods = modsByTab[tabName]
+    for (const mod of mods) {
+      const checkbox = mod.querySelector('input[type="checkbox"]')
+      if (checkbox.id === fileName) {
+        const filePath = `${tabName}/${fileName}.ps1`
+        return filePath
+      }
+    }
+  }
+  throw new Error(`File not found: ${fileName}`)
+}
 
 fetch("modules.json")
   .then(jsonFile => jsonFile.json())
   .then(jsonData => generateHtml(jsonData))
-  .then(() => attachEvents())
+  .then(jsonData => attachEvents(jsonData))
   .catch(error => console.log(error))

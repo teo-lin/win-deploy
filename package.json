@@ -4,7 +4,9 @@
   "description": "\"Automated Windows deployment (setup, personalisation, debloating, drivers, apps, optimisations)\"",
   "main": "main.js",
   "scripts": {
-    "start": "nodemon --watch renderer --exec electron .",
+    "start": "electron .",
+    "watch": "watch 'npm run start' renderer",
+    "debug": "electron --inspect=5858 .",
     "build": "electron-builder"
   },
   "repository": {
@@ -21,7 +23,6 @@
   "author": "Teolin Codreanu",
   "license": "Apache-2.0",
   "devDependencies": {
-    "electron": "^25.2.0",
-    "nodemon": "^3.0.1"
+    "electron": "^25.3.0"
   }
 }

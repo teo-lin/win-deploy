@@ -1,0 +1,149 @@
+[
+    {
+        "file": "createNewTextFile",
+        "type": "general",
+        "name": "Create a new text file",
+        "info": "Creates a new text file called TestX.txt in a test folder in the modules folder. You can list existing text files or undo the last one.",
+        "sets": ""
+    },
+    {
+        "file": "mod001",
+        "type": "general",
+        "name": "",
+        "info": "Mod 1 - very long explanation of what this does bla bla bla",
+        "sets": ""
+    },
+    {
+        "file": "mod002",
+        "type": "debloat",
+        "name": "",
+        "info": "Mod 2 - very long explanation of what this does...",
+        "sets": ""
+    },
+    {
+        "file": "mod003",
+        "type": "debloat",
+        "name": "",
+        "info": "Mod 3 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
+        "sets": ""
+    },
+    {
+        "file": "mod004",
+        "type": "security",
+        "name": "",
+        "info": "Mod 4 - very long explanation of what this does bla bla bla",
+        "sets": ""
+    },
+    {
+        "file": "mod005",
+        "type": "security",
+        "name": "",
+        "info": "Mod 5 - very long explanation of what this does bla bla bla",
+        "sets": ""
+    },
+    {
+        "file": "mod006",
+        "type": "security",
+        "name": "",
+        "info": "Mod 6 - very long explanation of what this does bla bla bla",
+        "sets": ""
+    },
+    {
+        "file": "mod007",
+        "type": "security",
+        "name": "",
+        "info": "Mod 7 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
+        "sets": ""
+    },
+    {
+        "file": "mod008",
+        "type": "security",
+        "name": "",
+        "info": "Mod 8 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
+        "sets": ""
+    },
+    {
+        "file": "mod009",
+        "type": "security",
+        "name": "",
+        "info": "Mod 9 - very long explanation of what this does bla bla bla",
+        "sets": ""
+    },
+    {
+        "file": "mod010",
+        "type": "security",
+        "name": "",
+        "info": "Mod 10 - very long explanation of what this does bla bla bla",
+        "sets": ""
+    },
+    {
+        "file": "mod011",
+        "type": "security",
+        "name": "",
+        "info": "Mod 11 - very long explanation of what this does bla bla bla",
+        "sets": ""
+    },
+    {
+        "file": "mod012",
+        "type": "security",
+        "name": "",
+        "info": "Mod 12 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
+        "sets": ""
+    },
+    {
+        "file": "mod013",
+        "type": "security",
+        "name": "",
+        "info": "Mod 13 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
+        "sets": ""
+    },
+    {
+        "file": "mod014",
+        "type": "security",
+        "name": "",
+        "info": "Mod 14 - very long explanation of what this does bla bla bla",
+        "sets": ""
+    },
+    {
+        "file": "mod015",
+        "type": "security",
+        "name": "",
+        "info": "Mod 15 - very long explanation of what this does bla bla bla",
+        "sets": ""
+    },
+    {
+        "file": "mod016",
+        "type": "security",
+        "name": "",
+        "info": "Mod 16 - very long explanation of what this does bla bla bla",
+        "sets": ""
+    },
+    {
+        "file": "mod017",
+        "type": "security",
+        "name": "",
+        "info": "Mod 17 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
+        "sets": ""
+    },
+    {
+        "file": "mod018",
+        "type": "security",
+        "name": "",
+        "info": "Mod 18 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
+        "sets": ""
+    },
+    {
+        "file": "mod019",
+        "type": "security",
+        "name": "",
+        "info": "Mod 19 - very long explanation of what this does bla bla bla",
+        "sets": ""
+    },
+    {
+        "file": "mod020",
+        "type": "security",
+        "name": "",
+        "info": "Mod 20 - very long explanation of what this does bla bla bla",
+        "sets": ""
+    }
+]

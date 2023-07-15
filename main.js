@@ -1,24 +1,22 @@
 const { app, BrowserWindow } = require('electron')
 
-function createWindow () {
-  const win = new BrowserWindow({
-    width: 800,
-    height: 600,
+function createWindow() {
+  const window = new BrowserWindow({
     webPreferences: {
       nodeIntegration: true
     }
   })
 
-  win.maximize()
+  window.maximize()
 
-  win.loadFile('interface/index.html')
+  window.loadFile('interface/index.html')
 }
 
 app.whenReady().then(() => {
   createWindow()
 
   app.on('activate', () => {
-    if (BrowserWindow.getAllWindows().length=== 0) {
+    if (BrowserWindow.getAllWindows().length === 0) {
       createWindow()
     }
   })
