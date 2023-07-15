@@ -48,52 +48,36 @@ function generateModsList(jsonData) {
     return checkboxesDiv.querySelectorAll(".mod")
 }
 
-function attachEvents(data) {
-    function handleModMouseEnter(mod) {
-        console.log("hovering...")
-        const audio = new Audio("hover.mp3")
-        audio.currentTime = 0
-        audio.play()
-        const output = document.querySelector("#output")
-        output.textContent = mod.textContent
-        mod.hoverTimeout = setTimeout(() => {
-            mod.dispatchEvent(mod.longHoverEvent)
-        }, 1000)
-    }
-    function handleModMouseLeave(mod) {
-        clearTimeout(mod.hoverTimeout)
-    }
-    function handleLongHover(mod) {
-        const checkbox = mod.querySelector('input[type="checkbox"]')
-        const fileName = checkbox.id
-        console.log(`FILE NAME: ${fileName}.ps1`)
-    }
+function attachEvents() {
     const mods = document.querySelectorAll(".mod")
     mods.forEach((mod) => {
         mod.hoverTimeout = null
         mod.longHoverEvent = new Event("longhover")
         mod.addEventListener("mouseenter", () => handleModMouseEnter(mod))
-        mod.addEventListener("mouseleave", () => handleModMouseLeave(mod))
+        mod.addEventListener("mouseleave", () => clearTimeout(mod.hoverTimeout))
         mod.addEventListener("longhover", () => handleLongHover(mod))
     })
 }
 
-function getFilePath(fileName, jsonData, modsByTab) {
-    for (const tabName in modsByTab) {
-        const mods = modsByTab[tabName]
-        for (const mod of mods) {
-            const checkbox = mod.querySelector('input[type="checkbox"]')
-            if (checkbox.id === fileName) {
-                const filePath = `${tabName}/${fileName}.ps1`
-                return filePath
-            }
-        }
-    }
-    throw new Error(`File not found: ${fileName}`)
+function handleModMouseEnter(mod) {
+    console.log("hovering...")
+    const audio = new Audio("hover.mp3")
+    audio.currentTime = 0
+    audio.play()
+    const output = document.querySelector("#output")
+    output.textContent = mod.textContent
+    mod.hoverTimeout = setTimeout(() => {
+        mod.dispatchEvent(mod.longHoverEvent)
+    }, 1000)
+}
+
+function handleLongHover(mod) {
+    const fileName = mod.querySelector('input[type="checkbox"]').id
+    console.log(`FILE NAME: ${fileName}.ps1`)
 }
 
 fetch("modules.json")
     .then(jsonFile => jsonFile.json())
     .then(jsonData => generateHtml(jsonData))
-    .then(jsonData => attachEvents(jsonData))
+    .then(() => attachEvents())
     .catch(error => console.log(error))
