@@ -3,7 +3,7 @@ const path = require('path')
 const fs = require('fs')
 
 function runPowerShellFile(fileName, functionName) {
-    const scriptPath = path.join(__dirname, fileName + '.ps1')
+    const scriptPath = path.join(__dirname, '..', 'modules', fileName + '.ps1')
     let args = ['-ExecutionPolicy', 'Bypass', '-File', scriptPath, '-NoLogo', '-NoProfile', '-NonInteractive']
     if (functionName) args.push(functionName)
 
@@ -32,13 +32,14 @@ function runPowerShellBase64EncodedCommand(command) {
     })
 }
 
-function runPowerShellScriptWithExtraCommand(fileName, extraCommand) {
+function runModFunction(modRoot, modType, modName, functionName) {
+    console.log(`PATH: /${modType}/${modName}.ps1`)
     return new Promise((resolve, reject) => {
-        const scriptPath = path.join(__dirname, fileName + '.ps1')
-        const scriptContent = fs.readFileSync(scriptPath, 'utf8')
-        const modifiedScriptContent = `${scriptContent}\n${extraCommand}`
-        const encodedCommand = Buffer.from(modifiedScriptContent, 'utf16le').toString('base64')
-        runPowerShellBase64EncodedCommand(encodedCommand)
+        const modPath = path.join(__dirname, '..', 'modules', modType, modName + '.ps1')
+        const modText = fs.readFileSync(modPath, 'utf8')
+        const modCode = `${modText}\n${functionName} ${modRoot}`
+        const command = Buffer.from(modCode, 'utf16le').toString('base64')
+        runPowerShellBase64EncodedCommand(command)
             .then(result => {
                 console.log(result)
                 resolve(result)

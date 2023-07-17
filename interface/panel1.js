@@ -14,12 +14,10 @@ function generateHtml(jsonData) {
         tabContent.classList.add("tabcontent")
         tabContent.id = `tab-${index}`
 
-        const mods = generateModsList(jsonData[tabName])
-        mods.forEach((mod) => tabContent.appendChild(mod))
-
+        const mods = generateModsList(jsonData[tabName], tabName)
+        mods.forEach(mod => tabContent.appendChild(mod))
         tabContainer.appendChild(tabButton)
         tabContentContainer.appendChild(tabContent)
-
         modsByTab[tabName] = mods
     })
 
@@ -29,12 +27,12 @@ function generateHtml(jsonData) {
     }
 }
 
-function generateModsList(jsonData) {
-    function createCheckboxElement(checkbox) {
+function generateModsList(jsonData, tabName) {
+    function createCheckboxElement(checkbox, tabName) {
         const checkboxElement = document.createElement("div")
         checkboxElement.classList.add("mod")
         checkboxElement.innerHTML = `
-      <input type="checkbox" id="${checkbox.file}">
+      <input type="checkbox" id="${checkbox.file}" data-tab-name="${tabName}">
       <label for="${checkbox.id}">${checkbox.info}</label>
     `
         return checkboxElement
@@ -42,7 +40,7 @@ function generateModsList(jsonData) {
 
     const checkboxesDiv = document.createElement("div")
     jsonData.forEach((checkbox) => {
-        const checkboxElement = createCheckboxElement(checkbox)
+        const checkboxElement = createCheckboxElement(checkbox, tabName)
         checkboxesDiv.appendChild(checkboxElement)
     })
     return checkboxesDiv.querySelectorAll(".mod")
@@ -71,27 +69,21 @@ function handleModMouseEnter(mod) {
     }, 1000)
 }
 
-function getModName(mod) {
-    // Get the filename of that mod
-    const fileName = mod.querySelector('input[type="checkbox"]').id
-    console.log(`FILE NAME: ${fileName}.ps1`)
-    return fileName
-}
-
 function handleLongHover(mod) {
-    const fileName = getModName(mod)
+    const checkbox = mod.querySelector('input[type="checkbox"]')
+    const modType = checkbox.dataset.tabName
+    const modName = checkbox.id
+    const modRoot = path.join(path.dirname(__dirname), 'modules', modType)
+    runModFunction(modRoot, modType, modName, 'Status')
 
     // TESTS run whole script files sequentially
-    runPowerShellFile('test1')
-        .then(() => runPowerShellFile('test2'))
-        .then(() => runPowerShellFile('test3', 'testTwo'))
+    // runPowerShellFile('test1')
+    //     .then(() => runPowerShellFile('test2'))
+    //     .then(() => runPowerShellFile('test3', 'testTwo'))
 
     // TEST run a specific function from a file
-    runPowerShellScriptWithExtraCommand('test3', 'testTwo')
-    runPowerShellScriptWithExtraCommand('test3', 'testOne')
-
-    // Get Status
-
+    // runModFunction('test3', 'testTwo')
+    // runModFunction('test3', 'testOne')
 }
 
 fetch("modules.json")
