@@ -71,16 +71,27 @@ function handleModMouseEnter(mod) {
     }, 1000)
 }
 
-function handleLongHover(mod) {
+function getModName(mod) {
+    // Get the filename of that mod
     const fileName = mod.querySelector('input[type="checkbox"]').id
     console.log(`FILE NAME: ${fileName}.ps1`)
+    return fileName
+}
 
-    runScriptWithExtraCommand(`function someFunction() { Write-Host 444 }`, `someFunction`)
-    psRun('test1')
-        .then(() => psRun('test2'))
-        .then(() => psRun('test3', 'testTwo'))
-    runScriptWithExtraCommand('test3', 'testTwo')
-    runScriptWithExtraCommand('test3', 'testOne')
+function handleLongHover(mod) {
+    const fileName = getModName(mod)
+
+    // TESTS run whole script files sequentially
+    runPowerShellFile('test1')
+        .then(() => runPowerShellFile('test2'))
+        .then(() => runPowerShellFile('test3', 'testTwo'))
+
+    // TEST run a specific function from a file
+    runPowerShellScriptWithExtraCommand('test3', 'testTwo')
+    runPowerShellScriptWithExtraCommand('test3', 'testOne')
+
+    // Get Status
+
 }
 
 fetch("modules.json")
