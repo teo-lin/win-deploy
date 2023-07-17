@@ -28,22 +28,22 @@ function generateHtml(jsonData) {
 }
 
 function generateModsList(jsonData, tabName) {
-    function createCheckboxElement(checkbox, tabName) {
-        const checkboxElement = document.createElement("div")
-        checkboxElement.classList.add("mod")
-        checkboxElement.innerHTML = `
-      <input type="checkbox" id="${checkbox.file}" data-tab-name="${tabName}">
-      <label for="${checkbox.id}">${checkbox.info}</label>
-    `
-        return checkboxElement
-    }
-
     const checkboxesDiv = document.createElement("div")
     jsonData.forEach((checkbox) => {
-        const checkboxElement = createCheckboxElement(checkbox, tabName)
+        const checkboxElement = createModElement(checkbox, tabName)
         checkboxesDiv.appendChild(checkboxElement)
     })
     return checkboxesDiv.querySelectorAll(".mod")
+}
+
+function createModElement(checkbox, tabName) {
+    const checkboxElement = document.createElement("div")
+    checkboxElement.classList.add("mod")
+    checkboxElement.innerHTML = `
+      <input type="checkbox" id="${checkbox.file}" data-tab-name="${tabName}">
+      <label for="${checkbox.id}">${checkbox.info}</label>
+    `
+    return checkboxElement
 }
 
 function attachEvents() {
@@ -74,13 +74,15 @@ function handleLongHover(mod) {
     const checkbox = mod.querySelector('input[type="checkbox"]')
     const modType = checkbox.dataset.tabName
     const modName = checkbox.id
-    const modRoot = path.join(path.dirname(__dirname), 'modules', modType)
+    const modRoot = path.join(path.dirname(__dirname))
 
     // execute the Status Function on longHover tho get the current status
     runModFunction(modRoot, modType, modName, 'Status')
         .then(response => {
             const output = document.querySelector("#output")
-            output.innerHTML += '<br><br>' + response
+            output.innerHTML += '<br><br><span style="color: khaki; font-weight: bold;">CURRENT STATUS:</span><br>'
+            response = response.replace(/\n|\r\n?/g, "<br>")
+            output.innerHTML += '<span style="color: lavender;">' + response + '</span>'
         })
         .catch(error => console.log(error))
 
@@ -94,7 +96,7 @@ function handleLongHover(mod) {
     // runModFunction('test3', 'testOne')
 }
 
-fetch("modules.json")
+fetch("mods.json")
     .then(jsonFile => jsonFile.json())
     .then(jsonData => generateHtml(jsonData))
     .then(() => attachEvents())

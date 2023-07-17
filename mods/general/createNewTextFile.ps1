@@ -1,6 +1,6 @@
 function Status($root) {
-    $folderPath = "$root\test"
-    $fileNames = "STATUS: "
+    $folderPath = "$root\mods\general\test"
+    $fileNames = ""
     if (Test-Path $folderPath) {
         $files = Get-ChildItem -Path $folderPath -Filter "*.txt" -File
         if ($files.Count -gt 0) {
@@ -11,11 +11,11 @@ function Status($root) {
     }
     else { $fileNames += "Directory ${folderPath} does not exist." }
     $fileNames = $fileNames.Substring(0, $fileNames.Length - 2) + "."
-    return $fileNames
+    Write-Host $fileNames
 }
 
 function Run($root) {
-    $folderPath = "$root\test"
+    $folderPath = "$root\mods\general\test"
     $fileBaseName = "test"
     $fileExtension = ".txt"
     $fileNumber = 1
@@ -25,7 +25,7 @@ function Run($root) {
 }
 
 function Undo($root) {
-    $folderPath = "$root\test"
+    $folderPath = "$root\mods\general\test"
     $fileBaseName = "test"
     $fileExtension = ".txt"
     $fileNumber = 1
