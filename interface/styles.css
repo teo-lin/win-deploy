@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   font-family: Arial, sans-serif;
@@ -57,7 +58,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 12px;
+  font-size: 11px;
   color: powderblue;
 }
 
@@ -77,15 +78,15 @@ html, body {
   font-size: 30px;
   color: beige;
   margin: 5px;
-  background-color: #1e2422;
-  transition: background-color 0.2s ease;
+  background-color: #34333b;
   border-radius: 7px;
   height: 60px;
 }
 
 .tab button:hover,
-.mod:hover {
-  background-color: #363636;
+.modbutton:hover {
+  background-color: #341f17;
+  transition: background-color 0.2s ease;
 }
 
 .tab button.active {
@@ -97,10 +98,9 @@ html, body {
 .mod {
   color: dimgray;
   border-radius: 8px;
-  padding: 6px;
-  margin: 5px 15px 5px 0px;
+  padding: 5px;
+  margin: 5px 15px 0px 0px;
   align-content: center;
-  transition: background-color 0.2s;
 }
 
 .mod {
@@ -121,4 +121,19 @@ html, body {
   color: wheat;
   display: inline-block;
   width: 100%;
+}
+
+.mod:hover label {
+  color: coral;
+  transition: color 0.1s;
+}
+
+/* -------------MOD BUTTONS ------------- */
+.modbutton {
+  border: 2px outset #000;
+  background-color: #34333b;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 3px 8px 2px 8px;
+  margin: 0 3px 0 0;
 }

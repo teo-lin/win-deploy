@@ -30,13 +30,13 @@ function generateHtml(jsonData) {
 function generateModsList(jsonData, tabName) {
     const checkboxesDiv = document.createElement("div")
     jsonData.forEach((checkbox) => {
-        const checkboxElement = createModElement(checkbox, tabName)
+        const checkboxElement = addModElement(checkbox, tabName)
         checkboxesDiv.appendChild(checkboxElement)
     })
     return checkboxesDiv.querySelectorAll(".mod")
 }
 
-function createModElement(checkbox, tabName) {
+function addModElementOld(checkbox, tabName) {
     const checkboxElement = document.createElement("div")
     checkboxElement.classList.add("mod")
     checkboxElement.innerHTML = `
@@ -44,6 +44,18 @@ function createModElement(checkbox, tabName) {
       <label for="${checkbox.id}">${checkbox.info}</label>
     `
     return checkboxElement
+}
+
+function addModElement(checkbox, tabName) {
+    const modElement = document.createElement("div")
+    modElement.classList.add("mod")
+    modElement.innerHTML = `
+      <input type="checkbox" id="${checkbox.file}" data-tab-name="${tabName}">
+      <label for="${checkbox.id}">${checkbox.info}</label>
+      <button class="modbutton" onclick="applyMod('${checkbox.file}')">Do</button>
+      <button class="modbutton" onclick="undoMod('${checkbox.file}')">Undo</button>
+    `
+    return modElement
 }
 
 function attachEvents() {
@@ -67,6 +79,16 @@ function handleModMouseEnter(mod) {
     mod.hoverTimeout = setTimeout(() => {
         mod.dispatchEvent(mod.longHoverEvent)
     }, 1000)
+}
+
+function applyMod(modFile) {
+    // TODO: add code to apply the mod
+    console.log(`Applying mod ${modFile}...`)
+}
+
+function undoMod(modFile) {
+    // TODO: add code to undo the mod
+    console.log(`Undoing mod ${modFile}...`)
 }
 
 function handleLongHover(mod) {
