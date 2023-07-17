@@ -1,4 +1,4 @@
-function Status {
+modules/createNewTextFile.ps1function Status {
     $dir = Split-Path -Parent $MyInvocation.MyCommand.Path
     $folderPath = "$dir\test"
     $fileExtension = ".txt"

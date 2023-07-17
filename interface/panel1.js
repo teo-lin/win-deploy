@@ -74,6 +74,13 @@ function handleModMouseEnter(mod) {
 function handleLongHover(mod) {
     const fileName = mod.querySelector('input[type="checkbox"]').id
     console.log(`FILE NAME: ${fileName}.ps1`)
+
+    runScriptWithExtraCommand(`function someFunction() { Write-Host 444 }`, `someFunction`)
+    psRun('test1')
+        .then(() => psRun('test2'))
+        .then(() => psRun('test3', 'testTwo'))
+    runScriptWithExtraCommand('test3', 'testTwo')
+    runScriptWithExtraCommand('test3', 'testOne')
 }
 
 fetch("modules.json")
