@@ -6,3 +6,5 @@ function log(message) {
     consoleElement.appendChild(p)
 }
 console.log = log
+console.error = log
+console.info = log

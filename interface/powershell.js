@@ -22,11 +22,11 @@ function runPowerShellBase64EncodedCommand(command) {
     let args = ['-NoLogo', '-NoProfile', '-NonInteractive', '-ExecutionPolicy', 'Bypass', '-EncodedCommand', command]
     return new Promise((resolve, reject) => {
         const child = spawn('powershell.exe', args)
-        let stderr = '' //, stdout = ''
-        child.stdout.on('data', data => console.log(data)) // stdout += data.toString()
+        let stderr = '', stdout = ''
+        child.stdout.on('data', data => stdout += data.toString())
         child.stderr.on('data', data => stderr += data.toString())
         child.on('close', code => {
-            if (code === 0) resolve() // resolve(stdout.trim())
+            if (code === 0) resolve(stdout.trim())
             else reject(new Error(`child process exited with code ${code}\n${stderr.trim()}`))
         })
     })

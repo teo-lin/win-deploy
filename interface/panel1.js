@@ -70,11 +70,19 @@ function handleModMouseEnter(mod) {
 }
 
 function handleLongHover(mod) {
+    // Get mod info
     const checkbox = mod.querySelector('input[type="checkbox"]')
     const modType = checkbox.dataset.tabName
     const modName = checkbox.id
     const modRoot = path.join(path.dirname(__dirname), 'modules', modType)
+
+    // execute the Status Function on longHover tho get the current status
     runModFunction(modRoot, modType, modName, 'Status')
+        .then(response => {
+            const output = document.querySelector("#output")
+            output.innerHTML += '<br><br>' + response
+        })
+        .catch(error => console.log(error))
 
     // TESTS run whole script files sequentially
     // runPowerShellFile('test1')
