@@ -14,13 +14,15 @@ function Status($root) {
     Write-Host $fileNames
 }
 
-function Run($root) {
+function Do($root) {
     $folderPath = "$root\mods\general\test"
     $fileBaseName = "test"
     $fileExtension = ".txt"
     $fileNumber = 1
     if (-not (Test-Path $folderPath)) { New-Item -ItemType Directory -Path $folderPath }
-    while (Test-Path "$folderPath\$fileBaseName$fileNumber$fileExtension") { $fileNumber++ }
+    while (Test-Path "$folderPath\$fileBaseName$fileNumber$fileExtension") { 
+        $fileNumber++ 
+    }
     New-Item -ItemType File -Path "$folderPath\$fileBaseName$fileNumber$fileExtension"
 }
 

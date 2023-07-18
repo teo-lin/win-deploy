@@ -2,22 +2,6 @@ const { spawn } = require('child_process')
 const path = require('path')
 const fs = require('fs')
 
-function runPowerShellFile(fileName, functionName) {
-    const scriptPath = path.join(__dirname, '..', 'mods', fileName + '.ps1')
-    let args = ['-ExecutionPolicy', 'Bypass', '-File', scriptPath, '-NoLogo', '-NoProfile', '-NonInteractive']
-    if (functionName) args.push(functionName)
-
-    return new Promise((resolve, reject) => {
-        const child = spawn('powershell.exe', args)
-        child.stdout.on('data', data => console.log(data))
-        child.stderr.on('data', data => console.error(data))
-        child.on('close', code => {
-            if (code === 0) resolve()
-            else reject(new Error(`child process exited with code ${code}`))
-        })
-    })
-}
-
 function runPowerShellBase64EncodedCommand(command) {
     let args = ['-NoLogo', '-NoProfile', '-NonInteractive', '-ExecutionPolicy', 'Bypass', '-EncodedCommand', command]
     return new Promise((resolve, reject) => {
@@ -32,8 +16,14 @@ function runPowerShellBase64EncodedCommand(command) {
     })
 }
 
-function runModFunction(modRoot, modType, modName, functionName) {
-    console.log(`PATH: /${modType}/${modName}.ps1`)
+function runModFunction(mod, functionName) {
+    console.log(`... starting ${functionName}`)
+    const checkbox = mod.querySelector('input[type="checkbox"]')
+    const modRoot = path.join(path.dirname(__dirname))
+    const modType = checkbox.dataset.tabName
+    const modName = checkbox.id
+
+    console.log(`RUNNING: ${modType}.${modName}.${functionName}`)
     return new Promise((resolve, reject) => {
         const modPath = path.join(__dirname, '..', 'mods', modType, modName + '.ps1')
         const modText = fs.readFileSync(modPath, 'utf8')
@@ -41,6 +31,10 @@ function runModFunction(modRoot, modType, modName, functionName) {
         const command = Buffer.from(modCode, 'utf16le').toString('base64')
         runPowerShellBase64EncodedCommand(command)
             .then(result => {
+                const output = document.querySelector("#output")
+                output.innerHTML += '<br><br><span style="color: khaki; font-weight: bold;">CURRENT STATUS:</span><br>'
+                result = result.replace(/\n|\r\n?/g, "<br>")
+                output.innerHTML += '<span style="color: lavender;">' + result + '</span>'
                 console.log(result)
                 resolve(result)
             })

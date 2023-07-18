@@ -6,7 +6,7 @@ function Status($root) {
     else { Write-Host "Lock screen image curently Disabled" }
 }
 
-function Run($root) {
+function Do($root) {
     Write-Host "MOD: Setting Lockscreen background to black"
     $RegKeyPath = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\PersonalizationCSP"
     $LockScreenImagePath = "$env:USERPROFILE\Documents\WindowsCustomisation\LockScreen.jpg"

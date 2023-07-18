@@ -1,4 +1,4 @@
-function openTab(evt, tabName) {
+function openTab(eventObject, tabName) {
     var i, tabcontent, tablinks
 
     tabcontent = document.getElementsByClassName("tabcontent")
@@ -12,5 +12,5 @@ function openTab(evt, tabName) {
     }
 
     document.getElementById(tabName).style.display = "block"
-    evt.currentTarget.className += " active"
+    eventObject.currentTarget.className += " active"
 }
