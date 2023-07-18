@@ -1,13 +1,15 @@
 {
     "appId": "com.teolin.win-deploy",
-    "productName": "Automated Windows Setup",
+    "productName": "WinDeploy",
     "copyright": "Copyright © 2023 Teolin Codreanu",
     "directories": {
-        "output": "out"
+        "output": "WinDeploy"
     },
     "files": [
         "src/",
-        "src/main.js"
+        "src/main.js",
+        "src/drivers/",
+        "src/apps/"
     ],
     "win": {
         "target": "portable",

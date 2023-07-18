@@ -1,13 +1,14 @@
 {
   "name": "win-deploy",
-  "version": "1.0.0",
+  "version": "0.3.0",
   "description": "'Automated Windows deployment (setup, personalisation, debloating, drivers, apps, optimisations)'",
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
     "watch": "watch 'npm run start' renderer",
     "debug": "electron --inspect=5858 .",
-    "build": "electron-builder"
+    "build": "if exist WinDeploy rd /s /q WinDeploy && electron-builder",
+    "zpack": "powershell Compress-Archive -Path out -DestinationPath WinDeploy.zip"
   },
   "repository": {
     "type": "git",
