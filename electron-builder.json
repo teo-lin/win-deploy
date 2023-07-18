@@ -10,7 +10,8 @@
         "src/main.js"
     ],
     "win": {
-        "target": "msi"
+        "target": "portable",
+        "icon": "src/interface/app.ico"
     },
     "mac": {
         "target": "dmg"
