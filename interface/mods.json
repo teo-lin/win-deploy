@@ -1,33 +1,19 @@
 {
-    "general": [
+    "debloat": [
         {
-            "file": "createNewTextFile",
-            "type": "general",
-            "name": "Create a new text file",
-            "info": "Creates a new text file called TestX.txt in a test folder in the modules folder. You can list existing text files or undo the last one.",
-            "sets": ""
-        },
-        {
-            "file": "generalTemplate",
-            "type": "general",
+            "file": "uninstallBloatware",
+            "type": "debloat",
             "name": "",
-            "info": "Mod 1 - very long explanation of what this does bla bla bla",
+            "info": "Uninstall apps that are shipped by the manufacturer or by Microsoft",
             "sets": ""
         }
     ],
-    "personalization": [
+    "setup": [
         {
             "file": "resetLockscreen",
-            "type": "personalization",
+            "type": "setup",
             "name": "Reset Lockscreen",
             "info": "Resets the Windows Lockscreen to black",
-            "sets": ""
-        },
-        {
-            "file": "personalizationTemplate",
-            "type": "personalization",
-            "name": "",
-            "info": "Mod 1 - very long explanation of what this does bla bla bla",
             "sets": ""
         }
     ],
@@ -207,6 +193,31 @@
             "type": "",
             "name": "",
             "info": "Mod 5 - very long explanation of what this does bla bla bla",
+            "sets": ""
+        }
+    ],
+    "apps": [
+        {
+            "file": "mod001",
+            "type": "apps",
+            "name": "",
+            "info": "Mod 1 - very long explanation of what this does bla bla bla",
+            "sets": ""
+        }
+    ],
+    "general": [
+        {
+            "file": "createNewTextFile",
+            "type": "general",
+            "name": "Create a new text file",
+            "info": "Creates a new text file called TestX.txt in a test folder in the modules folder. You can list existing text files or undo the last one.",
+            "sets": ""
+        },
+        {
+            "file": "generalTemplate",
+            "type": "general",
+            "name": "",
+            "info": "Mod 1 - very long explanation of what this does bla bla bla",
             "sets": ""
         }
     ]
