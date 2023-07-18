@@ -1,0 +1,21 @@
+{
+    "appId": "com.teolin.win-deploy",
+    "productName": "Automated Windows Setup",
+    "copyright": "Copyright © 2023 Teolin Codreanu",
+    "directories": {
+        "output": "out"
+    },
+    "files": [
+        "src/",
+        "src/main.js"
+    ],
+    "win": {
+        "target": "msi"
+    },
+    "mac": {
+        "target": "dmg"
+    },
+    "linux": {
+        "target": "AppImage"
+    }
+}
