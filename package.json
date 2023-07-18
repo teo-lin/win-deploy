@@ -1,7 +1,7 @@
 {
   "name": "win-deploy",
   "version": "1.0.0",
-  "description": "\"Automated Windows deployment (setup, personalisation, debloating, drivers, apps, optimisations)\"",
+  "description": "'Automated Windows deployment (setup, personalisation, debloating, drivers, apps, optimisations)'",
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
