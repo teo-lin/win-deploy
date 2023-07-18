@@ -2,6 +2,9 @@
 old
 .old
 
+#Distributables
+WinDeploy
+
 # Logs
 logs
 *.log

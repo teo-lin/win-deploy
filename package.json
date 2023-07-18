@@ -7,7 +7,8 @@
     "start": "electron .",
     "watch": "watch 'npm run start' renderer",
     "debug": "electron --inspect=5858 .",
-    "build": "if exist WinDeploy rd /s /q WinDeploy && electron-builder",
+    "build": "electron-builder",
+    "rebuild": "if exist WinDeploy rd /s /q WinDeploy && electron-builder",
     "zpack": "powershell Compress-Archive -Path out -DestinationPath WinDeploy.zip"
   },
   "repository": {
