@@ -4,7 +4,7 @@ function Status($root) {
     Write-Host $status
 }
 
-function Do($root) {
+function Apply($root) {
     $status = "STATUS: "
 
     Write-Host $status

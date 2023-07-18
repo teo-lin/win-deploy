@@ -17,13 +17,13 @@ function runPowerShellBase64EncodedCommand(command) {
 }
 
 function runModFunction(mod, functionName) {
-    console.log(`... starting ${functionName}`)
     const checkbox = mod.querySelector('input[type="checkbox"]')
     const modRoot = path.join(path.dirname(__dirname))
     const modType = checkbox.dataset.tabName
     const modName = checkbox.id
+    // console.log(`RUNNING: ${modType}.${modName}.${functionName}`)
+    logBold(`RUNNING: ${modType}.${modName}.${functionName}`)
 
-    console.log(`RUNNING: ${modType}.${modName}.${functionName}`)
     return new Promise((resolve, reject) => {
         const modPath = path.join(__dirname, '..', 'mods', modType, modName + '.ps1')
         const modText = fs.readFileSync(modPath, 'utf8')
@@ -79,7 +79,7 @@ function generateHtml(jsonData) {
         tabContent.classList.add("tabcontent")
         tabContent.id = `tab-${index}`
 
-        const mods = generateModsList(jsonData[tabName], tabName)
+        const mods = addModsList(jsonData[tabName], tabName)
         mods.forEach(mod => tabContent.appendChild(mod))
         tabContainer.appendChild(tabButton)
         tabContentContainer.appendChild(tabContent)
@@ -92,7 +92,7 @@ function generateHtml(jsonData) {
     }
 }
 
-function generateModsList(jsonData, tabName) {
+function addModsList(jsonData, tabName) {
     const checkboxesDiv = document.createElement("div")
     jsonData.forEach((checkbox) => {
         const checkboxElement = addModElement(checkbox, tabName)
@@ -114,7 +114,6 @@ function addModElement(checkbox, tabName) {
 
 function attachEvents() {
     function handleModMouseEnter(mod) {
-        console.log("hovering...")
         const audio = new Audio("hover.mp3")
         audio.currentTime = 0
         audio.play()
@@ -135,7 +134,7 @@ function attachEvents() {
         mod.addEventListener("longhover", () => runModFunction(mod, 'Status'))
 
         // Add Do/Undo buttons
-        mod.querySelector('.do-button').addEventListener("click", () => runModFunction(mod, 'Do'))
+        mod.querySelector('.do-button').addEventListener("click", () => runModFunction(mod, 'Apply'))
         mod.querySelector('.undo-button').addEventListener("click", () => runModFunction(mod, 'Undo'))
     })
 }

@@ -6,8 +6,8 @@ function Status($root) {
     else { Write-Host "Lock screen image curently Disabled" }
 }
 
-function Do($root) {
-    Write-Host "MOD: Setting Lockscreen background to black"
+function Apply($root) {
+    Write-Host "START: Setting Lockscreen background to black"
     $RegKeyPath = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\PersonalizationCSP"
     $LockScreenImagePath = "$env:USERPROFILE\Documents\WindowsCustomisation\LockScreen.jpg"
     $LockScreenSource = "$root\modAssets\BlackScreen.jpg"
@@ -24,7 +24,7 @@ function Do($root) {
 }
 
 function Undo($root) {
-    Write-Host "MOD: Disabling Lockscreen background"
+    Write-Host "START: Disabling Lockscreen background"
     $RegKeyPath = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\PersonalizationCSP"
     if (Test-Path $RegKeyPath) {
         Set-ItemProperty -Path $RegKeyPath -Name "LockScreenImageStatus" -Value 0 -Force | Out-Null

@@ -14,7 +14,7 @@ function Status($root) {
     Write-Host $fileNames
 }
 
-function Do($root) {
+function Apply($root) {
     $folderPath = "$root\mods\general\test"
     $fileBaseName = "test"
     $fileExtension = ".txt"
