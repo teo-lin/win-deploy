@@ -1,5 +1,5 @@
 {
-  "name": "automated-windows-setup",
+  "name": "win-deploy",
   "version": "1.0.0",
   "description": "\"Automated Windows deployment (setup, personalisation, debloating, drivers, apps, optimisations)\"",
   "main": "main.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "github.com/teo-lin/automated-windows-setup"
+    "url": "github.com/teo-lin/win-deploy"
   },
   "keywords": [
     "debloat",
