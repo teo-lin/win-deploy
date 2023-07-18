@@ -10,7 +10,7 @@ function createWindow() {
   })
 
   window.maximize()
-  window.loadFile('interface/index.html')
+  window.loadFile('src/interface/index.html')
 }
 
 app.whenReady().then(() => {
