@@ -4,9 +4,11 @@ function log(message) {
     const p = document.createElement('p')
     if (message instanceof Error) {
         p.style.color = 'salmon'
-        p.textContent = message.message
+        p.innerHTML = message
     }
-    else p.textContent = message
+    else {
+        p.innerHTML = message
+    }
     consoleElement.appendChild(p)
 }
 

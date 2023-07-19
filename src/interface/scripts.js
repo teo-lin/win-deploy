@@ -5,7 +5,7 @@ const fs = require('fs')
 function runPowerShellBase64EncodedCommand(command) {
     let args = ['-NoLogo', '-NoProfile', '-NonInteractive', '-ExecutionPolicy', 'Bypass', '-EncodedCommand', command]
     return new Promise((resolve, reject) => {
-        const child = spawn('powershell.exe', args)
+        const child = spawn('powershell.exe', args, { shell: true, elevated: true })
         let stderr = '', stdout = ''
         child.stdout.on('data', data => stdout += data.toString())
         child.stderr.on('data', data => stderr += data.toString())
@@ -31,9 +31,9 @@ function runModFunction(mod, functionName) {
         runPowerShellBase64EncodedCommand(command)
             .then(result => {
                 const output = document.querySelector("#output")
-                output.innerHTML += '<br><br><span style="color: khaki; font-weight: bold;">CURRENT STATUS:</span><br>'
-                result = result.replace(/\n|\r\n?/g, "<br>")
-                output.innerHTML += '<span style="color: lavender;">' + result + '</span>'
+                output.innerHTML += `<br>CURRENTLY RUNNING : <span style="color: hotpink; font-weight: bold;">${modType}.${modName}.${functionName}</span><br>`
+                result = result.replace(/\n|\r\n?/g, '<br>')
+                output.innerHTML += `<span style="color: lightgreen;">${result}</span>`
                 console.log(result)
                 resolve(result)
             })
@@ -119,7 +119,7 @@ function attachEvents() {
         audio.play()
         const output = document.querySelector("#output")
         const info = mod.dataset.info.replace(/\n/g, '<br>')
-        output.innerHTML = info
+        output.innerHTML = `${info}<br>`
         mod.hoverTimeout = setTimeout(() => { mod.dispatchEvent(mod.longHoverEvent) }, 1000)
     }
 

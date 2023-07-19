@@ -22,7 +22,16 @@
             "file": "installDrivers",
             "type": "drivers",
             "name": "TODO: Install Custom Drivers",
-            "info": "If Windows update grabs the wrong driver or you don't want to use Windows Update at all, this mod allows you to drp a bunch of drivers in the drivers folder and they will be installed silently.",
+            "info": "Batch-install Windows drivers (.exe, .cab, .msi). Useful when: \n- Windows Update grabs the wrong driver, \n- Windows Update cannot find the driver(s), \n- You don't want to use Windows Update at all. \n This mod allows you to drop a bunch of drivers in the drivers folder and they will be installed silently. \n IMPORTANT: because they install silently, you will not be notified if the installation fails. Check the Device Manager to see if there are still missing drivers and, if so, you may need to install them manually.",
+            "sets": ""
+        }
+    ],
+    "apps": [
+        {
+            "file": "installUserApps",
+            "type": "apps",
+            "name": "TODO: Install your own apps",
+            "info": "Batch installs all the apps (i.e. software applications) you drop in the apps folder. Accepted extensions are .exe and .msi",
             "sets": ""
         }
     ],
@@ -63,15 +72,6 @@
             "sets": ""
         }
     ],
-    "apps": [
-        {
-            "file": "installUserApps",
-            "type": "apps",
-            "name": "TODO: Install your own apps",
-            "info": "Batch installs all the apps (i.e. software applications) you drop in the apps folder. Accepted extensions are .exe and .msi",
-            "sets": ""
-        }
-    ],
     "general": [
         {
             "file": "createNewTextFile",
@@ -85,6 +85,13 @@
             "type": "general",
             "name": "General Mod Template",
             "info": "Mod 1 - very long explanation of what this does bla bla bla",
+            "sets": ""
+        },
+        {
+            "file": "checkAdminRights",
+            "type": "general",
+            "name": "Check Privileges",
+            "info": "Check whether you are currently running as an administrator",
             "sets": ""
         }
     ],
