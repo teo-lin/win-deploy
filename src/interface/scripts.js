@@ -17,11 +17,9 @@ function runPowerShellBase64EncodedCommand(command) {
 }
 
 function runModFunction(mod, functionName) {
-    const checkbox = mod.querySelector('input[type="checkbox"]')
     const modRoot = path.join(path.dirname(__dirname))
-    const modType = checkbox.dataset.tabName
-    const modName = checkbox.id
-    // console.log(`RUNNING: ${modType}.${modName}.${functionName}`)
+    const modType = mod.dataset.type
+    const modName = mod.dataset.file
     logBold(`RUNNING: ${modType}.${modName}.${functionName}`)
 
     return new Promise((resolve, reject) => {
@@ -46,7 +44,7 @@ function runModFunction(mod, functionName) {
     })
 }
 
-function openTab(eventObject, tabName) {
+function openTab(eventObject, typeName) {
     var i, tabcontent, tablinks
 
     tabcontent = document.getElementsByClassName("tabcontent")
@@ -59,54 +57,58 @@ function openTab(eventObject, tabName) {
         tablinks[i].className = tablinks[i].className.replace(" active", "")
     }
 
-    document.getElementById(tabName).style.display = "block"
+    document.getElementById(typeName).style.display = "block"
     eventObject.currentTarget.className += " active"
 }
 
 // Generate panel1 automatically from json
 function generateHtml(jsonData) {
-    const tabContainer = document.getElementById("tab-container")
-    const tabContentContainer = document.getElementById("tab-content-container")
+    const typeContainer = document.getElementById("type-container")
+    const typeContentContainer = document.getElementById("type-content-container")
     const modsByType = {}
 
-    // mods.json is an object, with mod types (categories) as keys and arrays of mods as values
-    Object.keys(jsonData).forEach(type => {
-        const tabButton = document.createElement("button")
-        tabButton.classList.add("tablinks")
-        tabButton.textContent = type
-        tabButton.onclick = (event) => openTab(event, `tab-${type}`)
-
-        const tabContent = document.createElement("div")
-        tabContent.classList.add("tabcontent")
-        tabContent.id = `tab-${type}`
-
-        const mods = addModsList(jsonData[type], type)
-        mods.forEach(mod => tabContent.appendChild(mod))
-        tabContainer.appendChild(tabButton)
-        tabContentContainer.appendChild(tabContent)
-        modsByType[type] = mods
+    Object.entries(jsonData).forEach(([type, mods]) => {
+        const typeButton = addTabButton(type)
+        const typeContent = addTabContent(type)
+        const modElements = mods.map(mod => addModElement(mod))
+        typeContent.append(...modElements)
+        typeContainer.appendChild(typeButton)
+        typeContentContainer.appendChild(typeContent)
+        modsByType[type] = modElements
     })
 
     return { jsonData, modsByType }
 }
 
-function addModsList(jsonData, tabName) {
-    const checkboxesDiv = document.createElement("div")
-    jsonData.forEach(checkbox => {
-        const checkboxElement = addModElement(checkbox, tabName)
-        checkboxesDiv.appendChild(checkboxElement)
-    })
-    return checkboxesDiv.querySelectorAll(".mod")
+function addTabButton(type) {
+    const typeButton = document.createElement("button")
+    typeButton.classList.add("tablinks")
+    typeButton.textContent = type
+    typeButton.onclick = (event) => openTab(event, `tab-${type}`)
+    return typeButton
 }
 
-function addModElement(checkbox, tabName) {
+function addTabContent(type) {
+    const typeContent = document.createElement("div")
+    typeContent.classList.add("tabcontent")
+    typeContent.id = `tab-${type}`
+    return typeContent
+}
+
+function addModElement(mod) {
+    const { file, type, name, info, sets } = mod
     const modElement = document.createElement("div")
     modElement.classList.add("mod")
+    modElement.dataset.file = file
+    modElement.dataset.type = type
+    modElement.dataset.name = name
+    modElement.dataset.info = info
+    modElement.dataset.sets = sets
     modElement.innerHTML = `
-      <input type="checkbox" id="${checkbox.file}" data-tab-name="${tabName}" data-file="${checkbox.file}" data-type="${checkbox.type}" data-name="${checkbox.name}" data-info="${checkbox.info}" data-sets="${checkbox.sets}">
-      <label for="${checkbox.id}">${checkbox.name}</label>
-      <button class="modbutton do-button">Do</button>
-      <button class="modbutton undo-button">Undo</button>`
+    <input type="checkbox" id="${file}" data-tab-name="${type}">
+    <label for="${file}">${name}</label>
+    <button class="modbutton do-button">Do</button>
+    <button class="modbutton undo-button">Undo</button>`
     return modElement
 }
 
@@ -116,9 +118,8 @@ function attachEvents() {
         audio.currentTime = 0
         audio.play()
         const output = document.querySelector("#output")
-        const checkbox = mod.querySelector('input[type="checkbox"]')
-        const modInfo = checkbox.dataset.info
-        output.textContent = modInfo
+        const info = mod.dataset.info.replace(/\n/g, '<br>')
+        output.innerHTML = info
         mod.hoverTimeout = setTimeout(() => { mod.dispatchEvent(mod.longHoverEvent) }, 1000)
     }
 
