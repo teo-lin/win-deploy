@@ -3,8 +3,8 @@
         {
             "file": "uninstallBloatware",
             "type": "debloat",
-            "name": "",
-            "info": "Uninstall apps that are shipped by the manufacturer or by Microsoft",
+            "name": "TODO: Uninstall windows bloatware",
+            "info": "Uninstall Windows 10/11 apps that are bundled with your windows setup:\n \n 3D Viewer - the app is useful when you want to view 3D models for 3D printing or 3D animations for Mixed reality experiences. Most Windows users will never need or use this app.\n Adobe Express - a freemium app that helps you improve your photos using various editing tools and features. However, in order to use it, you’ll need to sign in with an Adobe account or sign up for one.\n Clipchamp - a video editor that helps you create and edit videos using a relatively simple interface. It also offers social media integration. You need an account to access its features, and more advanced tools and export options are available only if you have a subscription.\n Facebook - the app of the most popular social media network in the world. Unfortunately, it’s an old and rather poorly designed app - even if you use this platform, it’s better in a web browser than in its dedicated Windows app.\n Hidden City: Hidden Object Adventure - a classic hidden objects type of game that requires you to spend energy points to play scenes and puzzles.\n Instagram - the app of the social network bearing the same name.\n Netflix - allows you to watch the movies and TV series available on the Netflix streaming service.\n News - an app developed by Microsoft, designed to give you the latest news from your region. Among others, you get curated news from top providers such as The Washington Post, CNN, and The New York Times.\n Prime Video - the official app for Amazon’s movie and TV series streaming service.\n Solitaire Collection - a free collection of card games based on the original Solitaire. Solitaire has been present in Windows for over 25 years and includes Klondike (the classic Solitaire), Spider, FreeCell, TriPeaks, and Pyramid.\n Mixed Reality Portal - only comes in handy to Windows users with a virtual reality headset or a HoloLens, and a computer powerful enough to run mixed reality experiences. This app should have been made available in the Microsoft Store and not preinstalled on most Windows PCs.\n Roblox - an online game platform and game creation system where users can design their own games and play games created by other players. While free to play, it’s filled with in-game microtransactions.\n TikTok - a popular video-sharing app that lets users create and share 10-minute-long videos.\n Bloatware shows up on Windows 11's Start Menu \n This year, while clean installing either Windows 10 or Windows 11 on our test computers, we’ve also encountered the following bloatware apps:\n \n Age of Empires: Castle Siege - a mediocre game developed by Microsoft. It lets you rule your empire through the Medieval Era, featuring several civilizations, including the Britons, Teutons, and Kievan Rus.\n Asphalt 8: Airborne - a car racing game with beautiful visuals and many game modes, in which you can meet and drive speed cars from manufacturers such as Ferrari, Lamborghini, McLaren, and Bugatti.\n Bubble Witch 3 Saga - lets you shoot bubbles to defeat evil. It's a game that both young and old can enjoy, but it's also bloatware for many users.\n Candy Crush Friends Saga - a popular game created by the developers of Candy Crush Soda Saga and Farm Heroes Saga. The game is about cookies and candies and about switching and matching them.\n Candy Crush Saga - yet another Candy Crush game, with different visuals and slightly different gameplay.\n FarmVille 2: Country Escape - Do you remember FarmVille? This is its next iteration: a game in which you enter a world of farming, harvesting, and raising animals.\n Fitbit Coach - a fitness app designed to provide personalized training to keep you motivated on your quest for a healthier lifestyle and a stronger body. One problem with this app is that it has limited free content; to use it, you have to pay a subscription. Also, Fitbit users may not want it on their PCs and prefer this app on their smartphones instead.\n Gardenscapes - a match-3 game in which your primary purpose is to restore a garden to its former glory.\n Phototastic Collage - lets you create collages with modern or classic designs using your photos.\n PicsArt Photo Studio: Collage Maker and Pic Editor - includes a photo editor and a collage maker and lets you edit and stylize your photos using effects, clipart, stickers, and other drawing tools.\n Print 3D - this app is useful only to people with a 3D printer to prepare the printing of 3D objects. Since this is a niche market, most Windows users don't need it, and this app should’ve definitely been placed in the Microsoft Store only.\n Spotify - the official player app for the popular music streaming service bearing the same name.\n Twitter - the official app of the popular Twitter social network. It's useful if you have a Twitter account and prefer using an app to connect to it instead of a web browser.",
             "sets": ""
         }
     ],
@@ -19,178 +19,45 @@
     ],
     "drivers": [
         {
-            "file": "mod001",
-            "type": "",
-            "name": "",
-            "info": "Mod 1 - very long explanation of what this does bla bla bla",
-            "sets": ""
-        },
-        {
-            "file": "mod002",
-            "type": "",
-            "name": "",
-            "info": "Mod 2 - very long explanation of what this does...",
-            "sets": ""
-        },
-        {
-            "file": "mod003",
-            "type": "",
-            "name": "",
-            "info": "Mod 3 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
-            "sets": ""
-        },
-        {
-            "file": "mod004",
-            "type": "",
-            "name": "",
-            "info": "Mod 4 - very long explanation of what this does bla bla bla",
-            "sets": ""
-        },
-        {
-            "file": "mod005",
-            "type": "",
-            "name": "",
-            "info": "Mod 5 - very long explanation of what this does bla bla bla",
-            "sets": ""
-        },
-        {
-            "file": "mod006",
-            "type": "",
-            "name": "",
-            "info": "Mod 6 - very long explanation of what this does bla bla bla",
-            "sets": ""
-        },
-        {
-            "file": "mod007",
-            "type": "",
-            "name": "",
-            "info": "Mod 7 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
-            "sets": ""
-        },
-        {
-            "file": "mod008",
-            "type": "",
-            "name": "",
-            "info": "Mod 8 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
-            "sets": ""
-        },
-        {
-            "file": "mod009",
-            "type": "",
-            "name": "",
-            "info": "Mod 9 - very long explanation of what this does bla bla bla",
-            "sets": ""
-        },
-        {
-            "file": "mod010",
-            "type": "",
-            "name": "",
-            "info": "Mod 10 - very long explanation of what this does bla bla bla",
-            "sets": ""
-        },
-        {
-            "file": "mod011",
-            "type": "",
-            "name": "",
-            "info": "Mod 11 - very long explanation of what this does bla bla bla",
-            "sets": ""
-        },
-        {
-            "file": "mod012",
-            "type": "",
-            "name": "",
-            "info": "Mod 12 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
-            "sets": ""
-        },
-        {
-            "file": "mod013",
-            "type": "",
-            "name": "",
-            "info": "Mod 13 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
-            "sets": ""
-        },
-        {
-            "file": "mod014",
-            "type": "",
-            "name": "",
-            "info": "Mod 14 - very long explanation of what this does bla bla bla",
-            "sets": ""
-        },
-        {
-            "file": "mod015",
-            "type": "",
-            "name": "",
-            "info": "Mod 15 - very long explanation of what this does bla bla bla",
-            "sets": ""
-        },
-        {
-            "file": "mod016",
-            "type": "",
-            "name": "",
-            "info": "Mod 16 - very long explanation of what this does bla bla bla",
-            "sets": ""
-        },
-        {
-            "file": "mod017",
-            "type": "",
-            "name": "",
-            "info": "Mod 17 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
-            "sets": ""
-        },
-        {
-            "file": "mod018",
-            "type": "",
-            "name": "",
-            "info": "Mod 18 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
-            "sets": ""
-        },
-        {
-            "file": "mod019",
-            "type": "",
-            "name": "",
-            "info": "Mod 19 - very long explanation of what this does bla bla bla",
-            "sets": ""
-        },
-        {
-            "file": "mod020",
-            "type": "",
-            "name": "",
-            "info": "Mod 20 - very long explanation of what this does bla bla bla",
+            "file": "installDrivers",
+            "type": "drivers",
+            "name": "TODO: Install Custom Drivers",
+            "info": "If Windows update grabs the wrong driver or you don't want to use Windows Update at all, this mod allows you to drp a bunch of drivers in the drivers folder and they will be installed silently.",
             "sets": ""
         }
     ],
     "security": [
         {
             "file": "mod001",
-            "type": "",
+            "type": "security",
             "name": "",
             "info": "Mod 1 - very long explanation of what this does bla bla bla",
             "sets": ""
         },
         {
             "file": "mod002",
-            "type": "",
+            "type": "security",
             "name": "",
             "info": "Mod 2 - very long explanation of what this does...",
             "sets": ""
         },
         {
             "file": "mod003",
-            "type": "",
+            "type": "security",
             "name": "",
-            "info": "Mod 3 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
+            "info": "Mod 3 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
             "sets": ""
         },
         {
             "file": "mod004",
-            "type": "",
+            "type": "security",
             "name": "",
             "info": "Mod 4 - very long explanation of what this does bla bla bla",
             "sets": ""
         },
         {
             "file": "mod005",
-            "type": "",
+            "type": "security",
             "name": "",
             "info": "Mod 5 - very long explanation of what this does bla bla bla",
             "sets": ""
@@ -198,10 +65,10 @@
     ],
     "apps": [
         {
-            "file": "mod001",
+            "file": "installUserApps",
             "type": "apps",
-            "name": "",
-            "info": "Mod 1 - very long explanation of what this does bla bla bla",
+            "name": "TODO: Install your own apps",
+            "info": "Batch installs all the apps (i.e. software applications) you drop in the apps folder. Accepted extensions are .exe and .msi",
             "sets": ""
         }
     ],
@@ -218,6 +85,148 @@
             "type": "general",
             "name": "",
             "info": "Mod 1 - very long explanation of what this does bla bla bla",
+            "sets": ""
+        }
+    ],
+    "other": [
+        {
+            "file": "mod001",
+            "type": "other",
+            "name": "",
+            "info": "Mod 1 - very long explanation of what this does bla bla bla",
+            "sets": ""
+        },
+        {
+            "file": "mod002",
+            "type": "other",
+            "name": "",
+            "info": "Mod 2 - very long explanation of what this does...",
+            "sets": ""
+        },
+        {
+            "file": "mod003",
+            "type": "other",
+            "name": "",
+            "info": "Mod 3 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
+            "sets": ""
+        },
+        {
+            "file": "mod004",
+            "type": "other",
+            "name": "",
+            "info": "Mod 4 - very long explanation of what this does bla bla bla",
+            "sets": ""
+        },
+        {
+            "file": "mod005",
+            "type": "other",
+            "name": "",
+            "info": "Mod 5 - very long explanation of what this does bla bla bla",
+            "sets": ""
+        },
+        {
+            "file": "mod006",
+            "type": "other",
+            "name": "",
+            "info": "Mod 6 - very long explanation of what this does bla bla bla",
+            "sets": ""
+        },
+        {
+            "file": "mod007",
+            "type": "other",
+            "name": "",
+            "info": "Mod 7 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
+            "sets": ""
+        },
+        {
+            "file": "mod008",
+            "type": "other",
+            "name": "",
+            "info": "Mod 8 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
+            "sets": ""
+        },
+        {
+            "file": "mod009",
+            "type": "other",
+            "name": "",
+            "info": "Mod 9 - very long explanation of what this does bla bla bla",
+            "sets": ""
+        },
+        {
+            "file": "mod010",
+            "type": "other",
+            "name": "",
+            "info": "Mod 10 - very long explanation of what this does bla bla bla",
+            "sets": ""
+        },
+        {
+            "file": "mod011",
+            "type": "other",
+            "name": "",
+            "info": "Mod 11 - very long explanation of what this does bla bla bla",
+            "sets": ""
+        },
+        {
+            "file": "mod012",
+            "type": "other",
+            "name": "",
+            "info": "Mod 12 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
+            "sets": ""
+        },
+        {
+            "file": "mod013",
+            "type": "other",
+            "name": "",
+            "info": "Mod 13 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
+            "sets": ""
+        },
+        {
+            "file": "mod014",
+            "type": "other",
+            "name": "",
+            "info": "Mod 14 - very long explanation of what this does bla bla bla",
+            "sets": ""
+        },
+        {
+            "file": "mod015",
+            "type": "other",
+            "name": "",
+            "info": "Mod 15 - very long explanation of what this does bla bla bla",
+            "sets": ""
+        },
+        {
+            "file": "mod016",
+            "type": "other",
+            "name": "",
+            "info": "Mod 16 - very long explanation of what this does bla bla bla",
+            "sets": ""
+        },
+        {
+            "file": "mod017",
+            "type": "other",
+            "name": "",
+            "info": "Mod 17 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
+            "sets": ""
+        },
+        {
+            "file": "mod018",
+            "type": "other",
+            "name": "",
+            "info": "Mod 18 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
+            "sets": ""
+        },
+        {
+            "file": "mod019",
+            "type": "other",
+            "name": "",
+            "info": "Mod 19 - very long explanation of what this does bla bla bla",
+            "sets": ""
+        },
+        {
+            "file": "mod020",
+            "type": "other",
+            "name": "",
+            "info": "Mod 20 - very long explanation of what this does bla bla bla",
             "sets": ""
         }
     ]

@@ -86,10 +86,7 @@ function generateHtml(jsonData) {
         modsByTab[tabName] = mods
     })
 
-    return {
-        jsonData: jsonData,
-        modsByTab: modsByTab,
-    }
+    return { jsonData, modsByTab }
 }
 
 function addModsList(jsonData, tabName) {
@@ -105,8 +102,8 @@ function addModElement(checkbox, tabName) {
     const modElement = document.createElement("div")
     modElement.classList.add("mod")
     modElement.innerHTML = `
-      <input type="checkbox" id="${checkbox.file}" data-tab-name="${tabName}">
-      <label for="${checkbox.id}">${checkbox.info}</label>
+      <input type="checkbox" id="${checkbox.file}" data-tab-name="${tabName}" data-file="${checkbox.file}" data-type="${checkbox.type}" data-name="${checkbox.name}" data-info="${checkbox.info}" data-sets="${checkbox.sets}">
+      <label for="${checkbox.id}">${checkbox.name}</label>
       <button class="modbutton do-button">Do</button>
       <button class="modbutton undo-button">Undo</button>`
     return modElement
