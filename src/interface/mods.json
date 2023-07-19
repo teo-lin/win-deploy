@@ -30,35 +30,35 @@
         {
             "file": "mod001",
             "type": "security",
-            "name": "",
+            "name": "Mod 001",
             "info": "Mod 1 - very long explanation of what this does bla bla bla",
             "sets": ""
         },
         {
             "file": "mod002",
             "type": "security",
-            "name": "",
+            "name": "Mod 002",
             "info": "Mod 2 - very long explanation of what this does...",
             "sets": ""
         },
         {
             "file": "mod003",
             "type": "security",
-            "name": "",
+            "name": "Mod 003",
             "info": "Mod 3 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
             "sets": ""
         },
         {
             "file": "mod004",
             "type": "security",
-            "name": "",
+            "name": "Mod 004",
             "info": "Mod 4 - very long explanation of what this does bla bla bla",
             "sets": ""
         },
         {
             "file": "mod005",
             "type": "security",
-            "name": "",
+            "name": "Mod 005",
             "info": "Mod 5 - very long explanation of what this does bla bla bla",
             "sets": ""
         }
@@ -83,7 +83,7 @@
         {
             "file": "generalTemplate",
             "type": "general",
-            "name": "",
+            "name": "General Mod Template",
             "info": "Mod 1 - very long explanation of what this does bla bla bla",
             "sets": ""
         }
@@ -92,140 +92,140 @@
         {
             "file": "mod001",
             "type": "other",
-            "name": "",
+            "name": "Mod Example...",
             "info": "Mod 1 - very long explanation of what this does bla bla bla",
             "sets": ""
         },
         {
             "file": "mod002",
             "type": "other",
-            "name": "",
+            "name": "Mod Example...",
             "info": "Mod 2 - very long explanation of what this does...",
             "sets": ""
         },
         {
             "file": "mod003",
             "type": "other",
-            "name": "",
+            "name": "mod Example...",
             "info": "Mod 3 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
             "sets": ""
         },
         {
             "file": "mod004",
             "type": "other",
-            "name": "",
+            "name": "mod Example...",
             "info": "Mod 4 - very long explanation of what this does bla bla bla",
             "sets": ""
         },
         {
             "file": "mod005",
             "type": "other",
-            "name": "",
+            "name": "mod Example...",
             "info": "Mod 5 - very long explanation of what this does bla bla bla",
             "sets": ""
         },
         {
             "file": "mod006",
             "type": "other",
-            "name": "",
+            "name": "mod Example...",
             "info": "Mod 6 - very long explanation of what this does bla bla bla",
             "sets": ""
         },
         {
             "file": "mod007",
             "type": "other",
-            "name": "",
+            "name": "mod Example...",
             "info": "Mod 7 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
             "sets": ""
         },
         {
             "file": "mod008",
             "type": "other",
-            "name": "",
+            "name": "mod Example...",
             "info": "Mod 8 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
             "sets": ""
         },
         {
             "file": "mod009",
             "type": "other",
-            "name": "",
+            "name": "mod Example...",
             "info": "Mod 9 - very long explanation of what this does bla bla bla",
             "sets": ""
         },
         {
             "file": "mod010",
             "type": "other",
-            "name": "",
+            "name": "mod Example...",
             "info": "Mod 10 - very long explanation of what this does bla bla bla",
             "sets": ""
         },
         {
             "file": "mod011",
             "type": "other",
-            "name": "",
+            "name": "mod Example...",
             "info": "Mod 11 - very long explanation of what this does bla bla bla",
             "sets": ""
         },
         {
             "file": "mod012",
             "type": "other",
-            "name": "",
+            "name": "mod Example...",
             "info": "Mod 12 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
             "sets": ""
         },
         {
             "file": "mod013",
             "type": "other",
-            "name": "",
+            "name": "mod Example...",
             "info": "Mod 13 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
             "sets": ""
         },
         {
             "file": "mod014",
             "type": "other",
-            "name": "",
+            "name": "mod Example...",
             "info": "Mod 14 - very long explanation of what this does bla bla bla",
             "sets": ""
         },
         {
             "file": "mod015",
             "type": "other",
-            "name": "",
+            "name": "mod Example...",
             "info": "Mod 15 - very long explanation of what this does bla bla bla",
             "sets": ""
         },
         {
             "file": "mod016",
             "type": "other",
-            "name": "",
+            "name": "mod Example...",
             "info": "Mod 16 - very long explanation of what this does bla bla bla",
             "sets": ""
         },
         {
             "file": "mod017",
             "type": "other",
-            "name": "",
+            "name": "mod Example...",
             "info": "Mod 17 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
             "sets": ""
         },
         {
             "file": "mod018",
             "type": "other",
-            "name": "",
+            "name": "mod Example...",
             "info": "Mod 18 - very long explanation of what this does bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
             "sets": ""
         },
         {
             "file": "mod019",
             "type": "other",
-            "name": "",
+            "name": "mod Example...",
             "info": "Mod 19 - very long explanation of what this does bla bla bla",
             "sets": ""
         },
         {
             "file": "mod020",
             "type": "other",
-            "name": "",
+            "name": "mod Example...",
             "info": "Mod 20 - very long explanation of what this does bla bla bla",
             "sets": ""
         }

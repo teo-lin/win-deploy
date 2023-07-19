@@ -67,31 +67,32 @@ function openTab(eventObject, tabName) {
 function generateHtml(jsonData) {
     const tabContainer = document.getElementById("tab-container")
     const tabContentContainer = document.getElementById("tab-content-container")
-    const modsByTab = {}
+    const modsByType = {}
 
-    Object.keys(jsonData).forEach((tabName, index) => {
+    // mods.json is an object, with mod types (categories) as keys and arrays of mods as values
+    Object.keys(jsonData).forEach(type => {
         const tabButton = document.createElement("button")
         tabButton.classList.add("tablinks")
-        tabButton.textContent = tabName
-        tabButton.onclick = (event) => openTab(event, `tab-${index}`)
+        tabButton.textContent = type
+        tabButton.onclick = (event) => openTab(event, `tab-${type}`)
 
         const tabContent = document.createElement("div")
         tabContent.classList.add("tabcontent")
-        tabContent.id = `tab-${index}`
+        tabContent.id = `tab-${type}`
 
-        const mods = addModsList(jsonData[tabName], tabName)
+        const mods = addModsList(jsonData[type], type)
         mods.forEach(mod => tabContent.appendChild(mod))
         tabContainer.appendChild(tabButton)
         tabContentContainer.appendChild(tabContent)
-        modsByTab[tabName] = mods
+        modsByType[type] = mods
     })
 
-    return { jsonData, modsByTab }
+    return { jsonData, modsByType }
 }
 
 function addModsList(jsonData, tabName) {
     const checkboxesDiv = document.createElement("div")
-    jsonData.forEach((checkbox) => {
+    jsonData.forEach(checkbox => {
         const checkboxElement = addModElement(checkbox, tabName)
         checkboxesDiv.appendChild(checkboxElement)
     })
@@ -115,10 +116,10 @@ function attachEvents() {
         audio.currentTime = 0
         audio.play()
         const output = document.querySelector("#output")
-        output.textContent = mod.textContent
-        mod.hoverTimeout = setTimeout(() => {
-            mod.dispatchEvent(mod.longHoverEvent)
-        }, 1000)
+        const checkbox = mod.querySelector('input[type="checkbox"]')
+        const modInfo = checkbox.dataset.info
+        output.textContent = modInfo
+        mod.hoverTimeout = setTimeout(() => { mod.dispatchEvent(mod.longHoverEvent) }, 1000)
     }
 
     const mods = document.querySelectorAll(".mod")
