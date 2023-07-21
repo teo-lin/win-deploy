@@ -8,8 +8,18 @@
     "files": [
         "src/",
         "src/main.js",
-        "src/drivers/",
-        "src/apps/"
+        {
+            "from": "src/drivers",
+            "to": "drivers",
+            "filter": "**/*"
+        }
+    ],
+    "extraResources": [
+        {
+            "from": "src/drivers",
+            "to": "drivers",
+            "filter": "**/*"
+        }
     ],
     "win": {
         "target": "portable",

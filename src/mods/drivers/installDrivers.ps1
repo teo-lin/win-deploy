@@ -29,3 +29,13 @@ function Apply($root) {
 function Undo($root) {
     Write-Host "NOT AVAILABLE: There is no standardized way to automatically uninstall drivers or undo the installation process, this depends on the specific driver installation method and the driver itself. Some drivers may provide an uninstallation mechanism through an executable or command-line utility specific to that driver."
 }
+
+function CreateFolder($root) {
+    # Create the "drivers" folder
+    $driversFolderPath = Join-Path -Path $root -ChildPath "driversTest"
+    New-Item -ItemType Directory -Path $driversFolderPath | Out-Null
+
+    # Inform the user that the "drivers" folder has been created
+    Write-Host "The 'drivers' folder has been created next to the executable. $driversFolderPath"
+    Write-Host "Please place your driver files inside this folder for batch installation."
+}

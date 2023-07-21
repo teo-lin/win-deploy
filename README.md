@@ -7,6 +7,11 @@ Typicat use case scenarios:
 This is geared towards developers who typically need to install a lot of tools/apps, each with their own configurations, security settings, logins on top of the typical Windows apps, but it will work just as well for any type of professional who needs to install any number of apps/systems/settings.
 
 This app is in active development. It is a refactoring of an older massive app that's fully cmd/powershell based, with no UI. It uses Electron to add a friendly user interface to that massive powershell library
+
+# UI Demo
+![Demo](src/interface/WinDeploy.Demo.gif)
+
+
 # DONE:
 - electron app setup
 - UX architecture
